@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | VeloEstate</title>
+
+    <meta
+        name="description"
+        content="Login to your VeloEstate account."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="auth-page">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <div class="container header-inner">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-mark">
+                V
+            </span>
+
+            <span>
+                Velo<span>Estate</span>
+            </span>
+
+        </a>
+
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="properties.html">
+                Properties
+            </a>
+
+            <a href="buy.html">
+                Buy
+            </a>
+
+            <a href="rent.html">
+                Rent
+            </a>
+
+            <a href="commercial.html">
+                Commercial
+            </a>
+
+            <a href="agents.html">
+                Agents
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <a
+                href="register.html"
+                class="btn btn-primary btn-small"
+            >
+                Create Account
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     LOGIN MAIN
+===================================================== -->
+
+<main>
+
+    <section class="auth-layout">
+
+
+        <!-- =================================================
+             LEFT SIDE
+        ================================================== -->
+
+        <div class="auth-info">
+
+            <span class="eyebrow">
+                WELCOME BACK
+            </span>
+
+
+            <h1>
+                Your next property
+                <br>
+                <span>starts here.</span>
+            </h1>
+
+
+            <p>
+                Sign in to VeloEstate and continue exploring
+                properties, saved listings and your real-estate
+                journey.
+            </p>
+
+
+            <div class="auth-features">
+
+
+                <!-- FEATURE 1 -->
+
+                <div class="auth-feature">
+
+                    <div class="auth-feature-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Save Properties
+                        </h3>
+
+                        <p>
+                            Keep your favourite properties
+                            in one place.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FEATURE 2 -->
+
+                <div class="auth-feature">
+
+                    <div class="auth-feature-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Easy Enquiries
+                        </h3>
+
+                        <p>
+                            Contact property consultants
+                            quickly.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FEATURE 3 -->
+
+                <div class="auth-feature">
+
+                    <div class="auth-feature-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Personal Dashboard
+                        </h3>
+
+                        <p>
+                            Manage your property activities
+                            easily.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             LOGIN CARD
+        ================================================== -->
+
+        <div class="auth-card">
+
+
+            <!-- CARD HEADER -->
+
+            <div class="auth-card-header">
+
+                <div class="auth-logo">
+
+                    <span class="logo-mark">
+                        V
+                    </span>
+
+                </div>
+
+
+                <h2>
+                    Welcome Back
+                </h2>
+
+
+                <p>
+                    Login to your VeloEstate account
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 LOGIN FORM
+            ================================================== -->
+
+            <form
+                id="loginForm"
+                class="auth-form"
+            >
+
+
+                <!-- ERROR -->
+
+                <div
+                    id="loginError"
+                    class="form-message error-message"
+                    hidden
+                ></div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="loginEmail">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- PASSWORD -->
+
+                <div class="form-group">
+
+                    <div class="form-label-row">
+
+                        <label for="loginPassword">
+                            Password
+                        </label>
+
+                        <a
+                            href="#"
+                            id="forgotPassword"
+                        >
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+
+                    <div class="password-field">
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            name="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="password-toggle"
+                            aria-label="Show password"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- REMEMBER ME -->
+
+                <div class="form-options">
+
+                    <label class="checkbox-label">
+
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                            name="remember"
+                        >
+
+                        <span>
+                            Remember me
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- LOGIN BUTTON -->
+
+                <button
+                    type="submit"
+                    class="btn btn-primary btn-full"
+                    id="loginButton"
+                >
+                    Login to VeloEstate
+                </button>
+
+
+
+                <!-- DIVIDER -->
+
+                <div class="auth-divider">
+
+                    <span>
+                        OR
+                    </span>
+
+                </div>
+
+
+
+                <!-- GOOGLE -->
+
+                <div class="social-login">
+
+                    <button
+                        type="button"
+                        class="social-btn"
+                        id="googleLogin"
+                    >
+
+                        <span>
+                            G
+                        </span>
+
+                        Continue with Google
+
+                    </button>
+
+                </div>
+
+
+            </form>
+
+
+
+            <!-- REGISTER -->
+
+            <div class="auth-footer">
+
+                <p>
+
+                    Don't have an account?
+
+                    <a href="register.html">
+                        Create Account
+                    </a>
+
+                </p>
+
+            </div>
+
+
+
+            <!-- BACK -->
+
+            <div class="auth-back">
+
+                <a href="index.html">
+                    ← Back to VeloEstate
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 VeloEstate. All rights reserved.
+            </p>
+
+
+            <div>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="main.js"></script>
+
+<script src="auth.js"></script>
+
+
+</body>
+
+</html>

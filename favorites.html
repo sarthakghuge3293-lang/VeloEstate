@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Saved Properties | VeloEstate</title>
+    <meta
+        name="description"
+        content="View and manage your saved properties on VeloEstate."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-mark">V</span>
+                <span>Velo<span>Estate</span></span>
+            </a>
+
+            <nav class="main-nav">
+
+                <a href="index.html">Home</a>
+                <a href="properties.html">Properties</a>
+                <a href="buy.html">Buy</a>
+                <a href="rent.html">Rent</a>
+                <a href="commercial.html">Commercial</a>
+                <a href="agents.html">Agents</a>
+                <a href="about.html">About</a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a href="list-property.html" class="btn btn-primary">
+                    List Property
+                </a>
+
+            </div>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section class="inner-hero">
+
+        <div class="container">
+
+            <span class="eyebrow">
+                YOUR COLLECTION
+            </span>
+
+            <h1>
+                Saved Properties
+            </h1>
+
+            <p>
+                Keep track of the properties you are interested in
+                and come back to them whenever you want.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FAVORITES ================= -->
+    <main class="section">
+
+        <div class="container">
+
+            <div class="section-heading left">
+
+                <div>
+
+                    <span class="eyebrow">
+                        FAVOURITES
+                    </span>
+
+                    <h2>
+                        Properties You've Saved
+                    </h2>
+
+                </div>
+
+                <a
+                    href="properties.html"
+                    class="btn btn-outline"
+                >
+                    Explore Properties
+                </a>
+
+            </div>
+
+
+            <!-- Favorite Count -->
+            <div class="favorites-toolbar">
+
+                <p>
+                    <strong id="favoriteCount">0</strong>
+                    saved properties
+                </p>
+
+                <button
+                    type="button"
+                    id="clearFavorites"
+                    class="btn btn-outline"
+                >
+                    Clear All
+                </button>
+
+            </div>
+
+
+            <!-- Properties Grid -->
+            <div
+                id="favoritesGrid"
+                class="property-grid"
+            >
+            </div>
+
+
+            <!-- Empty State -->
+            <div
+                id="favoritesEmpty"
+                class="empty-state"
+                hidden
+            >
+
+                <div class="empty-icon">
+                    ♡
+                </div>
+
+                <h2>
+                    No Saved Properties Yet
+                </h2>
+
+                <p>
+                    You haven't saved any properties yet.
+                    Explore our listings and save the ones you like.
+                </p>
+
+                <a
+                    href="properties.html"
+                    class="btn btn-primary"
+                >
+                    Explore Properties
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="cta-section">
+
+        <div class="container">
+
+            <div class="cta-content">
+
+                <span class="eyebrow">
+                    FIND YOUR NEXT PROPERTY
+                </span>
+
+                <h2>
+                    Still looking for the right place?
+                </h2>
+
+                <p>
+                    Explore our latest residential and commercial
+                    property listings.
+                </p>
+
+                <a
+                    href="properties.html"
+                    class="btn btn-light"
+                >
+                    Browse Properties
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 VeloEstate. All rights reserved.
+                </p>
+
+                <div>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+    <script src="favorites.js"></script>
+
+</body>
+</html>

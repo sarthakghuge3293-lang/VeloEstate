@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>VeloEstate | Find Your Perfect Property</title>
+
+    <meta
+        name="description"
+        content="VeloEstate - Discover premium homes, apartments, villas, plots and commercial properties."
+    >
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     SCROLL PROGRESS
+===================================================== -->
+
+<div
+    class="scroll-progress"
+    id="scrollProgress"
+></div>
+
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header
+    class="site-header"
+    id="siteHeader"
+>
+
+    <div class="container header-inner">
+
+
+        <!-- LOGO -->
+
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <span class="brand-mark">
+                V
+            </span>
+
+            <span>
+                Velo<span>Estate</span>
+            </span>
+
+        </a>
+
+
+
+        <!-- DESKTOP NAVIGATION -->
+
+        <nav class="desktop-nav">
+
+            <a
+                href="index.html"
+                class="nav-link active"
+            >
+                Home
+            </a>
+
+            <a
+                href="properties.html"
+                class="nav-link"
+            >
+                Properties
+            </a>
+
+            <a
+                href="buy.html"
+                class="nav-link"
+            >
+                Buy
+            </a>
+
+            <a
+                href="rent.html"
+                class="nav-link"
+            >
+                Rent
+            </a>
+
+            <a
+                href="commercial.html"
+                class="nav-link"
+            >
+                Commercial
+            </a>
+
+            <a
+                href="agents.html"
+                class="nav-link"
+            >
+                Agents
+            </a>
+
+            <a
+                href="about.html"
+                class="nav-link"
+            >
+                About
+            </a>
+
+        </nav>
+
+
+
+        <!-- HEADER ACTIONS -->
+
+        <div class="header-actions">
+
+            <a
+                href="login.html"
+                class="btn btn-ghost"
+            >
+                Login
+            </a>
+
+            <a
+                href="list-property.html"
+                class="btn btn-gold"
+            >
+                List Property
+            </a>
+
+        </div>
+
+
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <button
+            class="icon-btn menu-toggle"
+            id="menuToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+    </div>
+
+
+
+    <!-- MOBILE MENU -->
+
+    <div
+        class="mobile-menu"
+        id="mobileMenu"
+    >
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="properties.html">
+            Properties
+        </a>
+
+        <a href="buy.html">
+            Buy
+        </a>
+
+        <a href="rent.html">
+            Rent
+        </a>
+
+        <a href="commercial.html">
+            Commercial
+        </a>
+
+        <a href="agents.html">
+            Agents
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+
+        <div class="mobile-actions">
+
+            <a
+                href="login.html"
+                class="btn btn-outline"
+            >
+                Login
+            </a>
+
+            <a
+                href="list-property.html"
+                class="btn btn-gold"
+            >
+                List Property
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+    class="hero"
+    id="home"
+>
+
+
+    <div class="hero-bg"></div>
+
+    <div class="hero-shade"></div>
+
+
+    <div class="container hero-content">
+
+
+        <span class="eyebrow light">
+            PREMIUM REAL ESTATE PLATFORM
+        </span>
+
+
+        <h1>
+
+            Find a place
+
+            <br>
+
+            you'll love to
+
+            <em>
+                call home.
+            </em>
+
+        </h1>
+
+
+        <p>
+
+            Discover exceptional homes,
+            apartments, villas, plots and
+            commercial spaces across India.
+
+        </p>
+
+
+
+        <!-- SEARCH BOX -->
+
+        <div class="search-panel">
+
+
+            <!-- SEARCH TABS -->
+
+            <div class="search-tabs">
+
+                <button
+                    class="search-tab active"
+                    data-purpose="Buy"
+                >
+                    Buy
+                </button>
+
+                <button
+                    class="search-tab"
+                    data-purpose="Rent"
+                >
+                    Rent
+                </button>
+
+                <button
+                    class="search-tab"
+                    data-purpose="Commercial"
+                >
+                    Commercial
+                </button>
+
+            </div>
+
+
+
+            <!-- SEARCH FORM -->
+
+            <form
+                class="search-form"
+                id="searchForm"
+            >
+
+
+                <!-- LOCATION -->
+
+                <div class="search-field">
+
+                    <span>
+                        Location
+                    </span>
+
+                    <div>
+
+                        <b>
+                            ⌖
+                        </b>
+
+                        <input
+                            type="text"
+                            id="searchLocation"
+                            placeholder="City or location"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PROPERTY TYPE -->
+
+                <div class="search-field">
+
+                    <span>
+                        Property Type
+                    </span>
+
+                    <div>
+
+                        <b>
+                            ⌂
+                        </b>
+
+                        <select
+                            id="searchType"
+                        >
+
+                            <option value="all">
+                                All Properties
+                            </option>
+
+                            <option>
+                                House
+                            </option>
+
+                            <option>
+                                Apartment
+                            </option>
+
+                            <option>
+                                Villa
+                            </option>
+
+                            <option>
+                                Shop
+                            </option>
+
+                            <option>
+                                Office
+                            </option>
+
+                            <option>
+                                Plot
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BUDGET -->
+
+                <div class="search-field">
+
+                    <span>
+                        Budget
+                    </span>
+
+                    <div>
+
+                        <b>
+                            ₹
+                        </b>
+
+                        <select
+                            id="searchBudget"
+                        >
+
+                            <option value="all">
+                                Any Budget
+                            </option>
+
+                            <option value="under20">
+                                Under ₹20 Lakh
+                            </option>
+
+                            <option value="20to50">
+                                ₹20–50 Lakh
+                            </option>
+
+                            <option value="50to100">
+                                ₹50 Lakh–1 Cr
+                            </option>
+
+                            <option value="100to200">
+                                ₹1–2 Cr
+                            </option>
+
+                            <option value="above200">
+                                Above ₹2 Cr
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SEARCH BUTTON -->
+
+                <button
+                    type="submit"
+                    class="search-submit"
+                >
+
+                    Search Properties
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROPERTY CATEGORIES
+===================================================== -->
+
+<section
+    class="section categories"
+    id="categories"
+>
+
+
+    <div class="container">
+
+
+        <div class="section-head">
+
+            <div>
+
+                <span class="eyebrow">
+                    EXPLORE
+                </span>
+
+                <h2>
+                    Find your property type
+                </h2>
+
+            </div>
+
+
+            <p>
+
+                Explore carefully selected
+                properties designed for different
+                lifestyles and investment goals.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="category-grid">
+
+
+            <!-- HOUSE -->
+
+            <a
+                href="properties.html?type=House"
+                class="category-card reveal"
+            >
+
+                <div class="category-icon">
+                    🏠
+                </div>
+
+                <strong>
+                    Houses
+                </strong>
+
+                <small>
+                    Family homes
+                </small>
+
+                <span class="category-link">
+                    Explore →
+                </span>
+
+            </a>
+
+
+
+            <!-- APARTMENT -->
+
+            <a
+                href="properties.html?type=Apartment"
+                class="category-card reveal"
+            >
+
+                <div class="category-icon">
+                    🏢
+                </div>
+
+                <strong>
+                    Apartments
+                </strong>
+
+                <small>
+                    Modern living
+                </small>
+
+                <span class="category-link">
+                    Explore →
+                </span>
+
+            </a>
+
+
+
+            <!-- VILLA -->
+
+            <a
+                href="properties.html?type=Villa"
+                class="category-card reveal"
+            >
+
+                <div class="category-icon">
+                    🏡
+                </div>
+
+                <strong>
+                    Villas
+                </strong>
+
+                <small>
+                    Premium lifestyle
+                </small>
+
+                <span class="category-link">
+                    Explore →
+                </span>
+
+            </a>
+
+
+
+            <!-- PLOT -->
+
+            <a
+                href="properties.html?type=Plot"
+                class="category-card reveal"
+            >
+
+                <div class="category-icon">
+                    🌳
+                </div>
+
+                <strong>
+                    Plots
+                </strong>
+
+                <small>
+                    Build your future
+                </small>
+
+                <span class="category-link">
+                    Explore →
+                </span>
+
+            </a>
+
+
+
+            <!-- SHOP -->
+
+            <a
+                href="properties.html?type=Shop"
+                class="category-card reveal"
+            >
+
+                <div class="category-icon">
+                    🏪
+                </div>
+
+                <strong>
+                    Shops
+                </strong>
+
+                <small>
+                    Business spaces
+                </small>
+
+                <span class="category-link">
+                    Explore →
+                </span>
+
+            </a>
+
+
+
+            <!-- OFFICE -->
+
+            <a
+                href="properties.html?type=Office"
+                class="category-card reveal"
+            >
+
+                <div class="category-icon">
+                    🏙️
+                </div>
+
+                <strong>
+                    Offices
+                </strong>
+
+                <small>
+                    Corporate spaces
+                </small>
+
+                <span class="category-link">
+                    Explore →
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FEATURED PROPERTIES
+===================================================== -->
+
+<section
+    class="section listings"
+    id="properties"
+>
+
+
+    <div class="container">
+
+
+        <div class="section-head">
+
+            <div>
+
+                <span class="eyebrow">
+                    HANDPICKED
+                </span>
+
+                <h2>
+                    Featured properties
+                </h2>
+
+            </div>
+
+
+            <a
+                href="properties.html"
+                class="text-btn"
+            >
+                View All Properties →
+            </a>
+
+        </div>
+
+
+
+        <div class="results-bar">
+
+            <span>
+                Featured listings
+            </span>
+
+            <span>
+                Premium properties
+            </span>
+
+        </div>
+
+
+
+        <!-- PROPERTY CARDS -->
+
+        <div
+            class="property-grid"
+            id="propertyGrid"
+        >
+
+
+            <!-- PROPERTY 1 -->
+
+            <article
+                class="property-card reveal"
+            >
+
+                <div class="property-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85"
+                        alt="Modern Luxury Family Home"
+                        loading="lazy"
+                    >
+
+                    <span class="badge">
+                        FOR SALE
+                    </span>
+
+                    <button
+                        class="favorite"
+                        data-favorite="1"
+                    >
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="property-body">
+
+                    <div class="property-type">
+                        HOUSE
+                    </div>
+
+                    <h3>
+                        Modern Luxury Family Home
+                    </h3>
+
+                    <p class="location">
+                        📍 Aurangabad, Maharashtra
+                    </p>
+
+
+                    <div class="details">
+
+                        <span>
+                            4 Beds
+                        </span>
+
+                        <span>
+                            3 Baths
+                        </span>
+
+                        <span>
+                            2,450 sq.ft
+                        </span>
+
+                    </div>
+
+
+                    <div class="property-bottom">
+
+                        <div>
+
+                            <small>
+                                Starting from
+                            </small>
+
+                            <div class="price">
+                                ₹1.25 Cr
+                            </div>
+
+                        </div>
+
+
+                        <a
+                            href="property-details.html?id=1"
+                            class="arrow"
+                        >
+                            →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROPERTY 2 -->
+
+            <article
+                class="property-card reveal"
+            >
+
+                <div class="property-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85"
+                        alt="Premium City View Apartment"
+                        loading="lazy"
+                    >
+
+                    <span class="badge rent">
+                        FOR RENT
+                    </span>
+
+                    <button
+                        class="favorite"
+                        data-favorite="2"
+                    >
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="property-body">
+
+                    <div class="property-type">
+                        APARTMENT
+                    </div>
+
+                    <h3>
+                        Premium City View Apartment
+                    </h3>
+
+                    <p class="location">
+                        📍 Pune, Maharashtra
+                    </p>
+
+
+                    <div class="details">
+
+                        <span>
+                            3 Beds
+                        </span>
+
+                        <span>
+                            2 Baths
+                        </span>
+
+                        <span>
+                            1,650 sq.ft
+                        </span>
+
+                    </div>
+
+
+                    <div class="property-bottom">
+
+                        <div>
+
+                            <small>
+                                Monthly Rent
+                            </small>
+
+                            <div class="price">
+                                ₹45,000
+                            </div>
+
+                        </div>
+
+
+                        <a
+                            href="property-details.html?id=2"
+                            class="arrow"
+                        >
+                            →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROPERTY 3 -->
+
+            <article
+                class="property-card reveal"
+            >
+
+                <div class="property-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=85"
+                        alt="Premium Corporate Office"
+                        loading="lazy"
+                    >
+
+                    <span class="badge commercial">
+                        COMMERCIAL
+                    </span>
+
+                    <button
+                        class="favorite"
+                        data-favorite="3"
+                    >
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="property-body">
+
+                    <div class="property-type">
+                        OFFICE
+                    </div>
+
+                    <h3>
+                        Premium Corporate Office
+                    </h3>
+
+                    <p class="location">
+                        📍 Mumbai, Maharashtra
+                    </p>
+
+
+                    <div class="details">
+
+                        <span>
+                            Furnished
+                        </span>
+
+                        <span>
+                            Parking
+                        </span>
+
+                        <span>
+                            3,200 sq.ft
+                        </span>
+
+                    </div>
+
+
+                    <div class="property-bottom">
+
+                        <div>
+
+                            <small>
+                                Starting from
+                            </small>
+
+                            <div class="price">
+                                ₹2.8 Cr
+                            </div>
+
+                        </div>
+
+
+                        <a
+                            href="property-details.html?id=3"
+                            class="arrow"
+                        >
+                            →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta">
+
+    <div class="container cta-inner">
+
+
+        <div>
+
+            <span class="eyebrow light">
+                HAVE A PROPERTY?
+            </span>
+
+            <h2>
+                Turn your property
+                into an opportunity.
+            </h2>
+
+            <p>
+                List your property and connect
+                with potential buyers and tenants.
+            </p>
+
+        </div>
+
+
+        <a
+            href="list-property.html"
+            class="btn btn-gold btn-large"
+        >
+            List Your Property →
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT PREVIEW
+===================================================== -->
+
+<section
+    class="section about"
+    id="about"
+>
+
+
+    <div class="container about-grid">
+
+
+        <div class="about-photo">
+
+            <img
+                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
+                alt="Luxury VeloEstate Property"
+                loading="lazy"
+            >
+
+
+            <div class="experience">
+
+                <strong>
+                    10+
+                </strong>
+
+                <span>
+                    Years of<br>
+                    Property Experience
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="about-copy">
+
+            <span class="eyebrow">
+                ABOUT VELOESTATE
+            </span>
+
+
+            <h2>
+                Property search,
+                <em>
+                    made better.
+                </em>
+            </h2>
+
+
+            <p>
+
+                VeloEstate brings homes,
+                investment opportunities and
+                commercial spaces together in
+                one modern property platform.
+
+            </p>
+
+
+            <div class="stats">
+
+                <div>
+
+                    <strong>
+                        5K+
+                    </strong>
+
+                    <span>
+                        Properties
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        2K+
+                    </strong>
+
+                    <span>
+                        Happy Clients
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        150+
+                    </strong>
+
+                    <span>
+                        Agents
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="about.html"
+                class="btn btn-dark"
+            >
+                Discover VeloEstate
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer
+    class="footer"
+    id="contact"
+>
+
+
+    <div class="container footer-grid">
+
+
+        <!-- BRAND -->
+
+        <div>
+
+            <a
+                href="index.html"
+                class="brand"
+            >
+
+                <span class="brand-mark">
+                    V
+                </span>
+
+                <span>
+                    Velo<span>Estate</span>
+                </span>
+
+            </a>
+
+
+            <p class="footer-intro">
+
+                Discover exceptional properties,
+                connect with trusted professionals
+                and find a place you'll love.
+
+            </p>
+
+
+            <div class="socials">
+
+                <a
+                    href="#"
+                    aria-label="Instagram"
+                >
+                    ◎
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="Facebook"
+                >
+                    f
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="LinkedIn"
+                >
+                    in
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="Twitter"
+                >
+                    𝕏
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- EXPLORE -->
+
+        <div>
+
+            <h4>
+                Explore
+            </h4>
+
+            <a
+                href="properties.html"
+                class="footer-link"
+            >
+                All Properties
+            </a>
+
+            <a
+                href="buy.html"
+                class="footer-link"
+            >
+                Buy
+            </a>
+
+            <a
+                href="rent.html"
+                class="footer-link"
+            >
+                Rent
+            </a>
+
+            <a
+                href="commercial.html"
+                class="footer-link"
+            >
+                Commercial
+            </a>
+
+        </div>
+
+
+
+        <!-- COMPANY -->
+
+        <div>
+
+            <h4>
+                Company
+            </h4>
+
+            <a
+                href="about.html"
+                class="footer-link"
+            >
+                About Us
+            </a>
+
+            <a
+                href="agents.html"
+                class="footer-link"
+            >
+                Our Agents
+            </a>
+
+            <a
+                href="contact.html"
+                class="footer-link"
+            >
+                Contact
+            </a>
+
+            <a
+                href="list-property.html"
+                class="footer-link"
+            >
+                List Property
+            </a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div>
+
+            <h4>
+                Contact
+            </h4>
+
+            <a
+                href="tel:+919876543210"
+                class="footer-link"
+            >
+                +91 98765 43210
+            </a>
+
+            <a
+                href="mailto:hello@veloestate.com"
+                class="footer-link"
+            >
+                hello@veloestate.com
+            </a>
+
+            <span class="footer-text">
+                Maharashtra, India
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <span>
+                © 2026 VeloEstate. All rights reserved.
+            </span>
+
+
+            <div>
+
+                <a
+                    href="#"
+                    class="footer-link"
+                >
+                    Privacy
+                </a>
+
+                <a
+                    href="#"
+                    class="footer-link"
+                >
+                    Terms
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script
+    src="main.js"
+></script>
+<script src="properties.js"></script>
+
+
+</body>
+
+</html>

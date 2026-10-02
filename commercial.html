@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Commercial Properties | VeloEstate</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="site-header" id="siteHeader">
+
+    <div class="container header-inner">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">V</span>
+            <span>Velo<span>Estate</span></span>
+        </a>
+
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html">Home</a>
+
+            <a href="properties.html">Properties</a>
+
+            <a href="buy.html">Buy</a>
+
+            <a href="rent.html">Rent</a>
+
+            <a href="commercial.html" class="active">
+                Commercial
+            </a>
+
+            <a href="agents.html">Agents</a>
+
+            <a href="about.html">About</a>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <a href="login.html" class="login-link">
+                Login
+            </a>
+
+            <a
+                href="list-property.html"
+                class="btn btn-primary btn-small"
+            >
+                List Property
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="inner-hero">
+
+    <div class="container">
+
+        <div class="inner-hero-content">
+
+            <span class="eyebrow">
+                COMMERCIAL REAL ESTATE
+            </span>
+
+            <h1>
+                Spaces Built for Business
+            </h1>
+
+            <p>
+                Discover offices, shops and commercial
+                properties in strategic locations.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SEARCH ================= -->
+
+<section class="section section-tight">
+
+    <div class="container">
+
+        <div class="search-panel inner-search">
+
+            <div class="search-tabs">
+
+                <button
+                    class="search-tab"
+                    onclick="window.location.href='buy.html'"
+                >
+                    Buy
+                </button>
+
+                <button
+                    class="search-tab"
+                    onclick="window.location.href='rent.html'"
+                >
+                    Rent
+                </button>
+
+                <button
+                    class="search-tab active"
+                    data-purpose="Commercial"
+                >
+                    Commercial
+                </button>
+
+            </div>
+
+
+            <form
+                class="search-form"
+                id="commercialSearchForm"
+            >
+
+                <div class="search-field">
+
+                    <label>
+                        Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="commercialLocation"
+                        placeholder="e.g. Mumbai, Aurangabad"
+                    >
+
+                </div>
+
+
+                <div class="search-field">
+
+                    <label>
+                        Property Type
+                    </label>
+
+                    <select id="commercialType">
+
+                        <option value="">
+                            Any Type
+                        </option>
+
+                        <option value="Office">
+                            Office
+                        </option>
+
+                        <option value="Shop">
+                            Shop
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="search-field">
+
+                    <label>
+                        Maximum Budget
+                    </label>
+
+                    <select id="commercialBudget">
+
+                        <option value="">
+                            Any Budget
+                        </option>
+
+                        <option value="10000000">
+                            Under ₹1 Cr
+                        </option>
+
+                        <option value="30000000">
+                            Under ₹3 Cr
+                        </option>
+
+                        <option value="50000000">
+                            Under ₹5 Cr
+                        </option>
+
+                        <option value="100000000">
+                            Under ₹10 Cr
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Search Commercial
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= COMMERCIAL PROPERTIES ================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="eyebrow">
+                    COMMERCIAL COLLECTION
+                </span>
+
+                <h2>
+                    Commercial Properties
+                </h2>
+
+            </div>
+
+
+            <a
+                href="properties.html?purpose=Commercial"
+                class="text-link"
+            >
+                View All →
+            </a>
+
+        </div>
+
+
+        <div
+            class="property-grid"
+            id="commercialPropertiesGrid"
+        ></div>
+
+
+        <div
+            class="empty-state"
+            id="commercialNoResults"
+            style="display:none;"
+        >
+
+            <div class="empty-icon">
+                ▣
+            </div>
+
+            <h3>
+                No Commercial Properties Found
+            </h3>
+
+            <p>
+                Try another location, property type
+                or budget.
+            </p>
+
+            <button
+                class="btn btn-outline"
+                id="resetCommercialSearch"
+            >
+                Reset Search
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BUSINESS SPACES ================= -->
+
+<section class="section section-muted">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="eyebrow">
+                BUSINESS SPACES
+            </span>
+
+            <h2>
+                Find the Right Space for Your Business
+            </h2>
+
+            <p>
+                Flexible commercial options for different
+                business requirements.
+            </p>
+
+        </div>
+
+
+        <div class="category-grid">
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    ▣
+                </div>
+
+                <h3>
+                    Office Spaces
+                </h3>
+
+                <p>
+                    Professional spaces for startups,
+                    companies and growing teams.
+                </p>
+
+                <a
+                    href="properties.html?type=Office"
+                    class="text-link"
+                >
+                    Explore Offices →
+                </a>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    ◫
+                </div>
+
+                <h3>
+                    Retail Shops
+                </h3>
+
+                <p>
+                    High-visibility commercial spaces
+                    suitable for retail businesses.
+                </p>
+
+                <a
+                    href="properties.html?type=Shop"
+                    class="text-link"
+                >
+                    Explore Shops →
+                </a>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    ◆
+                </div>
+
+                <h3>
+                    Prime Locations
+                </h3>
+
+                <p>
+                    Explore commercial properties in
+                    strategically connected areas.
+                </p>
+
+                <a
+                    href="properties.html?purpose=Commercial"
+                    class="text-link"
+                >
+                    Explore Locations →
+                </a>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    +
+                </div>
+
+                <h3>
+                    List Your Space
+                </h3>
+
+                <p>
+                    Have a commercial property?
+                    Put it in front of potential clients.
+                </p>
+
+                <a
+                    href="list-property.html"
+                    class="text-link"
+                >
+                    List Property →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="section cta-section">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div>
+
+                <span class="eyebrow">
+                    COMMERCIAL PROPERTY OWNERS
+                </span>
+
+                <h2>
+                    Have a Commercial Space?
+                </h2>
+
+                <p>
+                    List your office or shop on VeloEstate
+                    and reach potential buyers.
+                </p>
+
+            </div>
+
+
+            <a
+                href="list-property.html"
+                class="btn btn-light"
+            >
+                List Commercial Property
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+
+        <div class="footer-brand">
+
+            <a
+                href="index.html"
+                class="logo footer-logo"
+            >
+
+                <span class="logo-mark">
+                    V
+                </span>
+
+                <span>
+                    Velo<span>Estate</span>
+                </span>
+
+            </a>
+
+            <p>
+                A modern real-estate platform designed
+                to make property discovery simple,
+                transparent and reliable.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Explore
+            </h4>
+
+            <a href="properties.html">
+                Properties
+            </a>
+
+            <a href="buy.html">
+                Buy
+            </a>
+
+            <a href="rent.html">
+                Rent
+            </a>
+
+            <a href="commercial.html">
+                Commercial
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Company
+            </h4>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="agents.html">
+                Agents
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="list-property.html">
+                List Property
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Contact
+            </h4>
+
+            <p>
+                Aurangabad, Maharashtra
+            </p>
+
+            <p>
+                +91 90000 00000
+            </p>
+
+            <p>
+                hello@veloestate.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                © 2026 VeloEstate. All rights reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= SCRIPTS ================= -->
+
+<script src="main.js"></script>
+<script src="commercial.js"></script>
+
+</body>
+</html>

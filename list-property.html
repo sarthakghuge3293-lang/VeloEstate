@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ================= HEADER ================= -->
+
+<header class="site-header" id="siteHeader">
+
+    <div class="container header-inner">
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <span class="logo-mark">V</span>
+
+            <span>
+                Velo<span>Estate</span>
+            </span>
+        </a>
+
+
+        <!-- Navigation -->
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html">Home</a>
+
+            <a href="properties.html">
+                Properties
+            </a>
+
+            <a href="buy.html">
+                Buy
+            </a>
+
+            <a href="rent.html">
+                Rent
+            </a>
+
+            <a href="commercial.html">
+                Commercial
+            </a>
+
+            <a href="agents.html">
+                Agents
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </nav>
+
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+
+            <a
+                href="login.html"
+                class="login-link"
+            >
+                Login
+            </a>
+
+            <a
+                href="list-property.html"
+                class="btn btn-primary btn-small"
+            >
+                List Property
+            </a>
+
+            <button
+                type="button"
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-mark">V</span>
+                <span>Velo<span>Estate</span></span>
+            </a>
+
+            <button
+                class="mobile-menu-toggle"
+                id="mobileMenuToggle"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+            <nav class="main-nav" id="mainNav">
+
+                <a href="index.html">Home</a>
+
+                <a href="properties.html">
+                    Properties
+                </a>
+
+                <a href="buy.html">
+                    Buy
+                </a>
+
+                <a href="rent.html">
+                    Rent
+                </a>
+
+                <a href="commercial.html">
+                    Commercial
+                </a>
+
+                <a href="agents.html">
+                    Agents
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a
+                    href="login.html"
+                    class="btn btn-outline"
+                >
+                    Login
+                </a>
+
+                <a
+                    href="list-property.html"
+                    class="btn btn-primary"
+                >
+                    List Property
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE HERO ================= -->
+
+    <section class="inner-hero">
+
+        <div class="container">
+
+            <div class="inner-hero-content">
+
+                <span class="eyebrow">
+                    SELL • RENT • COMMERCIAL
+                </span>
+
+                <h1>
+                    List Your Property
+                </h1>
+
+                <p>
+                    Reach genuine property seekers and showcase
+                    your property with VeloEstate.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FORM SECTION ================= -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="form-layout">
+
+                <!-- ================= FORM ================= -->
+
+                <div class="form-card">
+
+                    <div class="section-heading left">
+
+                        <span class="eyebrow">
+                            PROPERTY INFORMATION
+                        </span>
+
+                        <h2>
+                            Tell us about your property
+                        </h2>
+
+                        <p>
+                            Fill in the details below to create
+                            your property listing.
+                        </p>
+
+                    </div>
+
+
+                    <form
+                        id="propertyListingForm"
+                        novalidate
+                    >
+
+                        <!-- SUCCESS / ERROR MESSAGE -->
+
+                        <div id="listingFormMessage"></div>
+
+
+                        <!-- ================= BASIC DETAILS ================= -->
+
+                        <div class="form-section-title">
+                            Basic Property Details
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <!-- Purpose -->
+
+                            <div class="form-group">
+
+                                <label for="listingPurpose">
+                                    Listing Purpose
+                                    <span>*</span>
+                                </label>
+
+                                <select
+                                    id="listingPurpose"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select Purpose
+                                    </option>
+
+                                    <option value="Buy">
+                                        Sell / Buy
+                                    </option>
+
+                                    <option value="Rent">
+                                        Rent
+                                    </option>
+
+                                    <option value="Commercial">
+                                        Commercial
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Property Type -->
+
+                            <div class="form-group">
+
+                                <label for="listingType">
+                                    Property Type
+                                    <span>*</span>
+                                </label>
+
+                                <select
+                                    id="listingType"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select Type
+                                    </option>
+
+                                    <option value="Apartment">
+                                        Apartment
+                                    </option>
+
+                                    <option value="House">
+                                        House
+                                    </option>
+
+                                    <option value="Villa">
+                                        Villa
+                                    </option>
+
+                                    <option value="Plot">
+                                        Plot
+                                    </option>
+
+                                    <option value="Office">
+                                        Office
+                                    </option>
+
+                                    <option value="Shop">
+                                        Shop
+                                    </option>
+
+                                    <option value="Warehouse">
+                                        Warehouse
+                                    </option>
+
+                                    <option value="Land">
+                                        Land
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Title -->
+
+                            <div class="form-group full-width">
+
+                                <label for="listingTitle">
+                                    Property Title
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="listingTitle"
+                                    placeholder="Example: Premium 3 BHK Family Apartment"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Description -->
+
+                            <div class="form-group full-width">
+
+                                <label for="listingDescription">
+                                    Property Description
+                                    <span>*</span>
+                                </label>
+
+                                <textarea
+                                    id="listingDescription"
+                                    rows="6"
+                                    placeholder="Describe your property, nearby facilities, highlights, etc."
+                                    required
+                                ></textarea>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ================= LOCATION ================= -->
+
+                        <div class="form-section-title">
+                            Location Details
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="listingCity">
+                                    City
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="listingCity"
+                                    placeholder="Example: Pune"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="listingLocality">
+                                    Locality
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="listingLocality"
+                                    placeholder="Example: Baner"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group full-width">
+
+                                <label for="listingAddress">
+                                    Full Address
+                                    <span>*</span>
+                                </label>
+
+                                <textarea
+                                    id="listingAddress"
+                                    rows="3"
+                                    placeholder="Enter complete property address"
+                                    required
+                                ></textarea>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ================= PRICE & AREA ================= -->
+
+                        <div class="form-section-title">
+                            Price & Property Size
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="listingPrice">
+                                    Price
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="listingPrice"
+                                    placeholder="Example: 7500000"
+                                    min="0"
+                                    required
+                                >
+
+                                <small class="form-help">
+                                    Enter amount in INR.
+                                </small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="listingArea">
+                                    Area (sq.ft)
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="listingArea"
+                                    placeholder="Example: 1500"
+                                    min="1"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="listingBedrooms">
+                                    Bedrooms
+                                </label>
+
+                                <select id="listingBedrooms">
+
+                                    <option value="">
+                                        Select
+                                    </option>
+
+                                    <option value="1">
+                                        1 BHK
+                                    </option>
+
+                                    <option value="2">
+                                        2 BHK
+                                    </option>
+
+                                    <option value="3">
+                                        3 BHK
+                                    </option>
+
+                                    <option value="4">
+                                        4 BHK
+                                    </option>
+
+                                    <option value="5">
+                                        5+ BHK
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="listingBathrooms">
+                                    Bathrooms
+                                </label>
+
+                                <select id="listingBathrooms">
+
+                                    <option value="">
+                                        Select
+                                    </option>
+
+                                    <option value="1">
+                                        1
+                                    </option>
+
+                                    <option value="2">
+                                        2
+                                    </option>
+
+                                    <option value="3">
+                                        3
+                                    </option>
+
+                                    <option value="4">
+                                        4+
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ================= IMAGE ================= -->
+
+                        <div class="form-section-title">
+                            Property Photos
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group full-width">
+
+                                <label for="listingImage">
+                                    Property Image
+                                </label>
+
+                                <input
+                                    type="file"
+                                    id="listingImage"
+                                    accept="image/jpeg,image/png,image/webp"
+                                >
+
+                                <small class="form-help">
+                                    JPG, PNG or WEBP. Maximum size 2 MB.
+                                </small>
+
+
+                                <!-- IMAGE PREVIEW -->
+
+                                <div
+                                    id="imagePreview"
+                                    class="listing-image-preview"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ================= AMENITIES ================= -->
+
+                        <div class="form-section-title">
+                            Amenities
+                        </div>
+
+
+                        <div class="amenities-grid">
+
+                            <label class="checkbox-item">
+
+                                <input
+                                    type="checkbox"
+                                    name="amenities"
+                                    value="Parking"
+                                >
+
+                                <span>
+                                    Parking
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-item">
+
+                                <input
+                                    type="checkbox"
+                                    name="amenities"
+                                    value="Lift"
+                                >
+
+                                <span>
+                                    Lift
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-item">
+
+                                <input
+                                    type="checkbox"
+                                    name="amenities"
+                                    value="Security"
+                                >
+
+                                <span>
+                                    Security
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-item">
+
+                                <input
+                                    type="checkbox"
+                                    name="amenities"
+                                    value="Gym"
+                                >
+
+                                <span>
+                                    Gym
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-item">
+
+                                <input
+                                    type="checkbox"
+                                    name="amenities"
+                                    value="Swimming Pool"
+                                >
+
+                                <span>
+                                    Swimming Pool
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-item">
+
+                                <input
+                                    type="checkbox"
+                                    name="amenities"
+                                    value="Garden"
+                                >
+
+                                <span>
+                                    Garden
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-item">
+
+                                <input
+                                    type="checkbox"
+                                    name="amenities"
+                                    value="Power Backup"
+                                >
+
+                                <span>
+                                    Power Backup
+                                </span>
+
+                            </label>
+
+
+                            <label class="checkbox-item">
+
+                                <input
+                                    type="checkbox"
+                                    name="amenities"
+                                    value="CCTV"
+                                >
+
+                                <span>
+                                    CCTV
+                                </span>
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- ================= OWNER DETAILS ================= -->
+
+                        <div class="form-section-title">
+                            Owner / Contact Details
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="ownerName">
+                                    Full Name
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="ownerName"
+                                    placeholder="Your full name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="ownerPhone">
+                                    Mobile Number
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="ownerPhone"
+                                    placeholder="10-digit mobile number"
+                                    maxlength="10"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group full-width">
+
+                                <label for="ownerEmail">
+                                    Email Address
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="ownerEmail"
+                                    placeholder="you@example.com"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ================= SUBMIT ================= -->
+
+                        <div class="form-submit">
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary btn-large"
+                            >
+                                Submit Property
+                            </button>
+
+                            <p class="form-note">
+                                Your property will be submitted
+                                for review before appearing publicly.
+                            </p>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+                <!-- ================= SIDE INFO ================= -->
+
+                <aside class="form-sidebar">
+
+                    <div class="info-card">
+
+                        <span class="info-icon">
+                            ✓
+                        </span>
+
+                        <h3>
+                            Simple Listing Process
+                        </h3>
+
+                        <p>
+                            Add your property details,
+                            upload a photo and submit.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <span class="info-icon">
+                            ◆
+                        </span>
+
+                        <h3>
+                            Reach Property Seekers
+                        </h3>
+
+                        <p>
+                            Your listing can be discovered
+                            by buyers, tenants and businesses.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <span class="info-icon">
+                            ★
+                        </span>
+
+                        <h3>
+                            Professional Presentation
+                        </h3>
+
+                        <p>
+                            Showcase your property with
+                            a clean and premium presentation.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <span class="info-icon">
+                            🔒
+                        </span>
+
+                        <h3>
+                            Your Information
+                        </h3>
+
+                        <p>
+                            Your submitted information is
+                            handled as part of the demo platform.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta-section">
+
+        <div class="container">
+
+            <div class="cta-content">
+
+                <span class="eyebrow">
+                    VELOESTATE
+                </span>
+
+                <h2>
+                    Looking for your next property?
+                </h2>
+
+                <p>
+                    Explore verified-looking property listings
+                    across residential and commercial categories.
+                </p>
+
+                <div class="cta-actions">
+
+                    <a
+                        href="properties.html"
+                        class="btn btn-light"
+                    >
+                        Explore Properties
+                    </a>
+
+                    <a
+                        href="contact.html"
+                        class="btn btn-outline-light"
+                    >
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="logo footer-logo"
+                >
+                    <span class="logo-mark">
+                        V
+                    </span>
+
+                    <span>
+                        Velo<span>Estate</span>
+                    </span>
+                </a>
+
+                <p>
+                    A modern property discovery platform
+                    for buying, renting and commercial spaces.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="properties.html">
+                    Properties
+                </a>
+
+                <a href="buy.html">
+                    Buy
+                </a>
+
+                <a href="rent.html">
+                    Rent
+                </a>
+
+                <a href="commercial.html">
+                    Commercial
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Company
+                </h4>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="agents.html">
+                    Agents
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="list-property.html">
+                    List Property
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Account
+                </h4>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+                <a href="favorites.html">
+                    Favorites
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <p>
+                © 2026 VeloEstate. All rights reserved.
+            </p>
+
+            <p>
+                Designed for modern property discovery.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="main.js"></script>
+    <script src="list-property.js"></script>
+
+</body>
+</html>

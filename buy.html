@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Buy Property | VeloEstate</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="site-header" id="siteHeader">
+
+    <div class="container header-inner">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">V</span>
+            <span>Velo<span>Estate</span></span>
+        </a>
+
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html">Home</a>
+
+            <a href="properties.html">Properties</a>
+
+            <a href="buy.html" class="active">Buy</a>
+
+            <a href="rent.html">Rent</a>
+
+            <a href="commercial.html">Commercial</a>
+
+            <a href="agents.html">Agents</a>
+
+            <a href="about.html">About</a>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <a href="login.html" class="login-link">
+                Login
+            </a>
+
+            <a
+                href="list-property.html"
+                class="btn btn-primary btn-small"
+            >
+                List Property
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="inner-hero">
+
+    <div class="container">
+
+        <div class="inner-hero-content">
+
+            <span class="eyebrow">
+                PROPERTY FOR SALE
+            </span>
+
+            <h1>
+                Find a Home to Call Your Own
+            </h1>
+
+            <p>
+                Discover premium homes, villas, apartments
+                and plots available for purchase.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BUY SEARCH ================= -->
+
+<section class="section section-tight">
+
+    <div class="container">
+
+        <div class="search-panel inner-search">
+
+            <div class="search-tabs">
+
+                <button
+                    class="search-tab active"
+                    data-purpose="Buy"
+                >
+                    Buy
+                </button>
+
+                <button
+                    class="search-tab"
+                    data-purpose="Rent"
+                    onclick="window.location.href='rent.html'"
+                >
+                    Rent
+                </button>
+
+                <button
+                    class="search-tab"
+                    data-purpose="Commercial"
+                    onclick="window.location.href='commercial.html'"
+                >
+                    Commercial
+                </button>
+
+            </div>
+
+
+            <form
+                class="search-form"
+                id="buySearchForm"
+            >
+
+                <div class="search-field">
+
+                    <label>
+                        Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="buyLocation"
+                        placeholder="e.g. Pune, Aurangabad"
+                    >
+
+                </div>
+
+
+                <div class="search-field">
+
+                    <label>
+                        Property Type
+                    </label>
+
+                    <select id="buyType">
+
+                        <option value="">
+                            Any Type
+                        </option>
+
+                        <option value="House">
+                            House
+                        </option>
+
+                        <option value="Apartment">
+                            Apartment
+                        </option>
+
+                        <option value="Villa">
+                            Villa
+                        </option>
+
+                        <option value="Plot">
+                            Plot
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="search-field">
+
+                    <label>
+                        Budget
+                    </label>
+
+                    <select id="buyBudget">
+
+                        <option value="">
+                            Any Budget
+                        </option>
+
+                        <option value="5000000">
+                            Under ₹50 Lakh
+                        </option>
+
+                        <option value="10000000">
+                            Under ₹1 Cr
+                        </option>
+
+                        <option value="20000000">
+                            Under ₹2 Cr
+                        </option>
+
+                        <option value="50000000">
+                            Under ₹5 Cr
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Search Properties
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROPERTIES ================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="eyebrow">
+                    BUY PROPERTY
+                </span>
+
+                <h2>
+                    Properties Available for Sale
+                </h2>
+
+            </div>
+
+
+            <a
+                href="properties.html?purpose=Buy"
+                class="text-link"
+            >
+                View All →
+            </a>
+
+        </div>
+
+
+        <div
+            class="property-grid"
+            id="buyPropertiesGrid"
+        ></div>
+
+
+        <div
+            class="empty-state"
+            id="buyNoResults"
+            style="display:none;"
+        >
+
+            <div class="empty-icon">
+                ⌂
+            </div>
+
+            <h3>
+                No Properties Found
+            </h3>
+
+            <p>
+                Try another location, property type or budget.
+            </p>
+
+            <button
+                class="btn btn-outline"
+                id="resetBuySearch"
+            >
+                Reset Search
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY VELOESTATE ================= -->
+
+<section class="section section-muted">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="eyebrow">
+                WHY BUY WITH US
+            </span>
+
+            <h2>
+                A Better Way to Find Your Home
+            </h2>
+
+            <p>
+                We make property discovery simpler from
+                search to site visit.
+            </p>
+
+        </div>
+
+
+        <div class="category-grid">
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    ✓
+                </div>
+
+                <h3>
+                    Verified Listings
+                </h3>
+
+                <p>
+                    Explore property listings with
+                    clear information and details.
+                </p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    ₹
+                </div>
+
+                <h3>
+                    Transparent Pricing
+                </h3>
+
+                <p>
+                    Compare properties and understand
+                    their listed pricing easily.
+                </p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    ◆
+                </div>
+
+                <h3>
+                    Expert Assistance
+                </h3>
+
+                <p>
+                    Connect with property professionals
+                    when you need help.
+                </p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    →
+                </div>
+
+                <h3>
+                    Easy Site Visits
+                </h3>
+
+                <p>
+                    Find a property you like and
+                    request a visit conveniently.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="section cta-section">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div>
+
+                <span class="eyebrow">
+                    SELL YOUR PROPERTY
+                </span>
+
+                <h2>
+                    Have a Property to Sell?
+                </h2>
+
+                <p>
+                    List your property on VeloEstate and
+                    connect with interested buyers.
+                </p>
+
+            </div>
+
+
+            <a
+                href="list-property.html"
+                class="btn btn-light"
+            >
+                List Property
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a
+                href="index.html"
+                class="logo footer-logo"
+            >
+
+                <span class="logo-mark">
+                    V
+                </span>
+
+                <span>
+                    Velo<span>Estate</span>
+                </span>
+
+            </a>
+
+            <p>
+                A modern real-estate platform designed
+                to make property discovery simple,
+                transparent and reliable.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Explore
+            </h4>
+
+            <a href="properties.html">
+                Properties
+            </a>
+
+            <a href="buy.html">
+                Buy
+            </a>
+
+            <a href="rent.html">
+                Rent
+            </a>
+
+            <a href="commercial.html">
+                Commercial
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Company
+            </h4>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="agents.html">
+                Agents
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="list-property.html">
+                List Property
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Contact
+            </h4>
+
+            <p>
+                Aurangabad, Maharashtra
+            </p>
+
+            <p>
+                +91 90000 00000
+            </p>
+
+            <p>
+                hello@veloestate.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                © 2026 VeloEstate. All rights reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="main.js"></script>
+<script src="buy.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Properties | VeloEstate</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <a href="index.html" class="brand">
+
+                <span class="brand-mark">
+                    V
+                </span>
+
+                <span>
+                    Velo<span>Estate</span>
+                </span>
+
+            </a>
+
+
+            <nav class="desktop-nav">
+
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+
+                <a href="properties.html" class="nav-link active">
+                    Properties
+                </a>
+
+                <a href="buy.html" class="nav-link">
+                    Buy
+                </a>
+
+                <a href="rent.html" class="nav-link">
+                    Rent
+                </a>
+
+                <a href="commercial.html" class="nav-link">
+                    Commercial
+                </a>
+
+                <a href="agents.html" class="nav-link">
+                    Agents
+                </a>
+
+                <a href="about.html" class="nav-link">
+                    About
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <a
+                    href="login.html"
+                    class="btn btn-outline"
+                >
+                    Login
+                </a>
+
+                <a
+                    href="list-property.html"
+                    class="btn btn-gold"
+                >
+                    List Property
+                </a>
+
+            </div>
+
+
+            <button
+                class="icon-btn menu-toggle"
+                id="mobileMenuToggle"
+                type="button"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+
+        <!-- MOBILE MENU -->
+
+        <div
+            class="mobile-menu"
+            id="mainNav"
+        >
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="properties.html">
+                Properties
+            </a>
+
+            <a href="buy.html">
+                Buy
+            </a>
+
+            <a href="rent.html">
+                Rent
+            </a>
+
+            <a href="commercial.html">
+                Commercial
+            </a>
+
+            <a href="agents.html">
+                Agents
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <div class="mobile-actions">
+
+                <a
+                    href="login.html"
+                    class="btn btn-outline"
+                >
+                    Login
+                </a>
+
+                <a
+                    href="list-property.html"
+                    class="btn btn-gold"
+                >
+                    List Property
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE HERO ================= -->
+
+    <section class="page-hero">
+
+        <div class="container page-hero-content">
+
+            <span class="eyebrow eyebrow-light">
+                EXPLORE REAL ESTATE
+            </span>
+
+            <h1>
+                Find Your Perfect Property
+            </h1>
+
+            <p>
+                Explore verified homes, apartments, villas,
+                plots and commercial properties.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROPERTIES ================= -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <!-- FILTER -->
+
+            <div class="property-filter">
+
+                <div class="filter-search">
+
+                    <span>
+                        ⌕
+                    </span>
+
+                    <input
+                        type="text"
+                        id="propertySearch"
+                        placeholder="Search by city, property name..."
+                    >
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <label for="purposeFilter">
+                        Purpose
+                    </label>
+
+                    <select id="purposeFilter">
+
+                        <option value="all">
+                            All
+                        </option>
+
+                        <option value="Buy">
+                            Buy
+                        </option>
+
+                        <option value="Rent">
+                            Rent
+                        </option>
+
+                        <option value="Commercial">
+                            Commercial
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <label for="typeFilter">
+                        Property Type
+                    </label>
+
+                    <select id="typeFilter">
+
+                        <option value="all">
+                            All Types
+                        </option>
+
+                        <option value="House">
+                            House
+                        </option>
+
+                        <option value="Apartment">
+                            Apartment
+                        </option>
+
+                        <option value="Villa">
+                            Villa
+                        </option>
+
+                        <option value="Office">
+                            Office
+                        </option>
+
+                        <option value="Shop">
+                            Shop
+                        </option>
+
+                        <option value="Plot">
+                            Plot
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <label for="locationFilter">
+                        Location
+                    </label>
+
+                    <select id="locationFilter">
+
+                        <option value="all">
+                            All Locations
+                        </option>
+
+                        <option value="Aurangabad">
+                            Aurangabad
+                        </option>
+
+                        <option value="Pune">
+                            Pune
+                        </option>
+
+                        <option value="Mumbai">
+                            Mumbai
+                        </option>
+
+                        <option value="Nashik">
+                            Nashik
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <label for="sortFilter">
+                        Sort
+                    </label>
+
+                    <select id="sortFilter">
+
+                        <option value="default">
+                            Recommended
+                        </option>
+
+                        <option value="low">
+                            Price: Low to High
+                        </option>
+
+                        <option value="high">
+                            Price: High to Low
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- RESULTS HEADER -->
+
+            <div class="results-header">
+
+                <div>
+
+                    <span class="eyebrow">
+                        PROPERTY COLLECTION
+                    </span>
+
+                    <h2>
+                        Available Properties
+                    </h2>
+
+                </div>
+
+                <p id="resultCount">
+                    Showing properties
+                </p>
+
+            </div>
+
+
+            <!-- PROPERTY GRID -->
+
+            <div
+                class="property-grid"
+                id="propertiesGrid"
+            ></div>
+
+
+            <!-- NO RESULTS -->
+
+            <div
+                class="empty-state"
+                id="noResults"
+                style="display:none;"
+            >
+
+                <div class="empty-icon">
+                    ⌂
+                </div>
+
+                <h3>
+                    No Properties Found
+                </h3>
+
+                <p>
+                    Try changing your search or filter options.
+                </p>
+
+                <button
+                    type="button"
+                    class="btn btn-outline"
+                    id="clearFilters"
+                >
+                    Clear Filters
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="section cta">
+
+        <div class="container">
+
+            <div class="cta-inner">
+
+                <div>
+
+                    <span class="eyebrow eyebrow-light">
+                        HAVE A PROPERTY?
+                    </span>
+
+                    <h2>
+                        List Your Property With VeloEstate
+                    </h2>
+
+                    <p>
+                        Reach genuine buyers and tenants
+                        looking for their next property.
+                    </p>
+
+                </div>
+
+                <a
+                    href="list-property.html"
+                    class="btn btn-gold btn-large"
+                >
+                    List Your Property
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <a
+                    href="index.html"
+                    class="brand"
+                >
+
+                    <span class="brand-mark">
+                        V
+                    </span>
+
+                    <span>
+                        Velo<span>Estate</span>
+                    </span>
+
+                </a>
+
+                <p class="footer-intro">
+                    A modern real-estate platform designed
+                    to make property discovery simple,
+                    transparent and convenient.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a
+                    href="properties.html"
+                    class="footer-link"
+                >
+                    Properties
+                </a>
+
+                <a
+                    href="buy.html"
+                    class="footer-link"
+                >
+                    Buy
+                </a>
+
+                <a
+                    href="rent.html"
+                    class="footer-link"
+                >
+                    Rent
+                </a>
+
+                <a
+                    href="commercial.html"
+                    class="footer-link"
+                >
+                    Commercial
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Company
+                </h4>
+
+                <a
+                    href="about.html"
+                    class="footer-link"
+                >
+                    About Us
+                </a>
+
+                <a
+                    href="agents.html"
+                    class="footer-link"
+                >
+                    Agents
+                </a>
+
+                <a
+                    href="contact.html"
+                    class="footer-link"
+                >
+                    Contact
+                </a>
+
+                <a
+                    href="list-property.html"
+                    class="footer-link"
+                >
+                    List Property
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Contact
+                </h4>
+
+                <p>
+                    Aurangabad, Maharashtra
+                </p>
+
+                <p>
+                    +91 90000 00000
+                </p>
+
+                <p>
+                    hello@veloestate.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 VeloEstate. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="main.js"></script>
+    <script src="properties.js"></script>
+
+</body>
+
+</html>

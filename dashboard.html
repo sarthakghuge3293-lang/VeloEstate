@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | VeloEstate</title>
+
+    <meta
+        name="description"
+        content="Manage your VeloEstate account, properties and saved listings."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+     ===================================================== -->
+
+<header class="site-header" id="siteHeader">
+
+    <div class="container header-inner">
+
+
+        <!-- LOGO -->
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            <span class="logo-mark">
+                V
+            </span>
+
+            <span>
+                Velo<span>Estate</span>
+            </span>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav
+            class="main-nav"
+            id="mainNav"
+        >
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="properties.html">
+                Properties
+            </a>
+
+            <a href="buy.html">
+                Buy
+            </a>
+
+            <a href="rent.html">
+                Rent
+            </a>
+
+            <a href="commercial.html">
+                Commercial
+            </a>
+
+            <a href="agents.html">
+                Agents
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </nav>
+
+
+        <!-- HEADER ACTIONS -->
+
+        <div class="header-actions">
+
+            <a
+                href="favorites.html"
+                class="btn btn-outline btn-small"
+            >
+                ♥ Favorites
+            </a>
+
+
+            <span
+                id="dashboardUserName"
+                class="dashboard-user"
+            >
+                User
+            </span>
+
+
+            <button
+                type="button"
+                id="logoutButton"
+                class="btn btn-primary btn-small"
+            >
+                Logout
+            </button>
+
+
+            <button
+                type="button"
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     DASHBOARD HERO
+     ===================================================== -->
+
+<section class="dashboard-hero">
+
+    <div class="container">
+
+        <div class="dashboard-hero-content">
+
+            <span class="eyebrow">
+                MY VELOESTATE
+            </span>
+
+            <h1>
+                My Dashboard
+            </h1>
+
+            <p>
+                Manage your account, listings and saved
+                properties.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     DASHBOARD CONTENT
+     ===================================================== -->
+
+<main>
+
+    <section class="section dashboard-section">
+
+        <div class="container">
+
+
+            <!-- WELCOME -->
+
+            <div class="dashboard-welcome">
+
+                <span class="eyebrow">
+                    WELCOME BACK
+                </span>
+
+                <h2 id="welcomeUser">
+                    Welcome to VeloEstate
+                </h2>
+
+                <p>
+                    Manage your property journey from one
+                    simple dashboard.
+                </p>
+
+            </div>
+
+
+
+            <!-- DASHBOARD CARDS -->
+
+            <div class="dashboard-grid">
+
+
+                <!-- SAVED PROPERTIES -->
+
+                <article class="dashboard-card">
+
+                    <div class="dashboard-card-icon">
+                        ♥
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Saved Properties
+                        </h3>
+
+                        <p>
+                            View and manage your favourite
+                            properties.
+                        </p>
+
+                        <a
+                            href="favorites.html"
+                            class="text-link"
+                        >
+                            View Favorites →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- MY LISTINGS -->
+
+                <article class="dashboard-card">
+
+                    <div class="dashboard-card-icon">
+                        ⌂
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            My Listings
+                        </h3>
+
+                        <p>
+                            Manage properties that you have
+                            listed on VeloEstate.
+                        </p>
+
+                        <a
+                            href="list-property.html"
+                            class="text-link"
+                        >
+                            List Property →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ENQUIRIES -->
+
+                <article class="dashboard-card">
+
+                    <div class="dashboard-card-icon">
+                        ✉
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            My Enquiries
+                        </h3>
+
+                        <p>
+                            Keep track of your property
+                            enquiries.
+                        </p>
+
+                        <a
+                            href="contact.html"
+                            class="text-link"
+                        >
+                            Contact Us →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROFILE -->
+
+                <article class="dashboard-card">
+
+                    <div class="dashboard-card-icon">
+                        ●
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            My Account
+                        </h3>
+
+                        <p>
+                            View your account information
+                            and profile details.
+                        </p>
+
+                        <a
+                            href="about.html"
+                            class="text-link"
+                        >
+                            About VeloEstate →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 QUICK ACTIONS
+                 ================================================= -->
+
+            <div class="dashboard-actions">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            QUICK ACTIONS
+                        </span>
+
+                        <h2>
+                            What would you like to do?
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="quick-action-grid">
+
+
+                    <a
+                        href="properties.html"
+                        class="quick-action"
+                    >
+
+                        <span>
+                            🔎
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Explore Properties
+                            </strong>
+
+                            <p>
+                                Find your next property.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <a
+                        href="buy.html"
+                        class="quick-action"
+                    >
+
+                        <span>
+                            🏠
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Buy Property
+                            </strong>
+
+                            <p>
+                                Explore properties for sale.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <a
+                        href="rent.html"
+                        class="quick-action"
+                    >
+
+                        <span>
+                            🔑
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Rent Property
+                            </strong>
+
+                            <p>
+                                Find your next rental home.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <a
+                        href="list-property.html"
+                        class="quick-action"
+                    >
+
+                        <span>
+                            +
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                List Your Property
+                            </strong>
+
+                            <p>
+                                Add a property to VeloEstate.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- =====================================================
+     CTA
+     ===================================================== -->
+
+<section class="section cta-section">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div>
+
+                <span class="eyebrow">
+                    READY TO MOVE?
+                </span>
+
+                <h2>
+                    Find Your Next Property With VeloEstate
+                </h2>
+
+                <p>
+                    Explore properties and connect with
+                    property professionals.
+                </p>
+
+            </div>
+
+
+            <a
+                href="properties.html"
+                class="btn btn-light"
+            >
+                Explore Properties
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+
+        <div class="footer-brand">
+
+            <a
+                href="index.html"
+                class="logo footer-logo"
+            >
+
+                <span class="logo-mark">
+                    V
+                </span>
+
+                <span>
+                    Velo<span>Estate</span>
+                </span>
+
+            </a>
+
+            <p>
+                A modern real-estate platform designed
+                to make property discovery simple,
+                transparent and reliable.
+            </p>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>
+                Explore
+            </h4>
+
+            <a href="properties.html">
+                Properties
+            </a>
+
+            <a href="buy.html">
+                Buy
+            </a>
+
+            <a href="rent.html">
+                Rent
+            </a>
+
+            <a href="commercial.html">
+                Commercial
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>
+                Company
+            </h4>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="agents.html">
+                Agents
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="list-property.html">
+                List Property
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>
+                Contact
+            </h4>
+
+            <p>
+                Aurangabad, Maharashtra
+            </p>
+
+            <p>
+                +91 90000 00000
+            </p>
+
+            <p>
+                hello@veloestate.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                © 2026 VeloEstate. All rights reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+     ===================================================== -->
+
+<script src="main.js"></script>
+
+<script src="dashboard.js"></script>
+
+
+</body>
+
+</html>
